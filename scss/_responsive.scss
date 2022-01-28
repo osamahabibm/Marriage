@@ -1,0 +1,128 @@
+@media only screen and (max-width: 991px) {
+  .nav_link {
+    padding: 0.5rem 0 !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header_1 {
+    .links_2 {
+      .call {
+        display: none;
+      }
+    }
+  }
+  .header_2 {
+    .container-xxl {
+      .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: #000000;
+        width: 50%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+        .nav_list {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          padding: 10px;
+          position: relative;
+          top: 40px;
+          .nav_item {
+            margin: 0.5rem 0;
+            display: flex;
+            .nav_link {
+              display: flex;
+              flex-direction: row;
+              color: #eee;
+              i {
+                width: 50px;
+                height: 50px;
+                margin-left: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+      .logo img {
+        width: 70px !important;
+        height: 70px !important;
+        object-fit: cover;
+      }
+      .header_toggle {
+        display: inline !important;
+        color: #000;
+        font-size: 24px;
+        padding-right: 1.5rem;
+      }
+      .header_close {
+        position: absolute;
+        left: 24px;
+        display: block !important;
+        font-size: 24px;
+        border-radius: 50%;
+        color: #eee;
+      }
+      .show {
+        right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .header_1 {
+    .container-xxl {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      .links_2 {
+        display: none !important;
+      }
+    }
+  }
+
+  .nav_link {
+    display: flex;
+    flex-direction: row;
+    color: #eee;
+    font-size: 14px;
+    i {
+      width: 40px !important;
+      height: 40px !important;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .header_toggle {
+    padding-right: 0.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  .header_1 {
+    .links_1 {
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .nav_link {
+    display: flex;
+    flex-direction: row;
+    color: #eee;
+    font-size: 12px;
+    i {
+      width: 30px !important;
+      height: 30px !important;
+      margin-left: 0.5rem;
+    }
+  }
+}

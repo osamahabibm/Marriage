@@ -1,0 +1,149 @@
+@import "./scss/responsive";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-family: myFirstFont;
+  direction: rtl;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/alfont_com_AlFont_com_DINNextLTArabic-Regular.ttf);
+}
+
+/* Rest UL&LI */
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* circle */
+@mixin circle($dimenions) {
+  border-radius: 50%;
+  width: $dimenions;
+  height: $dimenions;
+}
+/* CENTER ELEMENT */
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sit */
+$Dark: #000;
+$white: #fff;
+$primery: #ff072a;
+
+/* StartHeader_1 */
+
+.header_1 {
+  position: relative;
+  background: $Dark;
+  .container-xxl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .links_1 {
+      padding: 10px;
+      a {
+        color: $white;
+        text-decoration: none;
+        padding: 0 0.5rem;
+        i {
+          padding: 0 0.3rem;
+        }
+      }
+    }
+    .links_2 {
+      padding: 10px;
+      display: flex;
+      flex-direction: row-reverse;
+      .social {
+        a {
+          color: $white;
+          padding: 0 0.5rem;
+        }
+      }
+      .call {
+        position: relative;
+        left: 50px;
+        direction: ltr;
+        a {
+          color: $white;
+          padding: 0 0.5rem;
+          text-decoration: none;
+          i {
+            padding: 0 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* EndHeader_1 */
+
+/* StartHeader_2 */
+.header_2 {
+  .container-xxl {
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    align-items: center;
+    flex-direction: row-reverse;
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        @include circle(100px);
+        object-fit: cover;
+      }
+    }
+    .nav_list {
+      display: flex;
+      align-items: center;
+      .nav_item {
+        margin: 0 8px;
+        .nav_link {
+          padding: 1rem 0.5rem;
+          color: $Dark;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-decoration: none;
+          i {
+            @include circle(70px);
+            text-align: center;
+            background: $primery;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .header_toggle {
+      display: none;
+      cursor: pointer;
+    }
+    .header_close {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+/* EndHeader_2 */

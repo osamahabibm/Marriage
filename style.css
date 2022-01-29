@@ -142,10 +142,10 @@
     width: 100% !important;
   }
   .qyran h3 {
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
   .qyran p {
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
@@ -159,16 +159,16 @@
   }
   .tab button {
     width: 100% !important;
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
   .select-tab {
     width: 100% !important;
   }
   .select-tab select {
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
   .select-tab .btns .btn {
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
 }
 

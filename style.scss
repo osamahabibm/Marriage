@@ -1,5 +1,5 @@
 @import "./scss/responsive";
-
+@import "scss/tab";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,6 +44,27 @@
 $Dark: #000;
 $white: #fff;
 $primery: #ff072a;
+$color-opcity: #d0d1d2;
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 /* StartHeader_1 */
 
@@ -147,3 +168,113 @@ $primery: #ff072a;
   }
 }
 /* EndHeader_2 */
+
+/* StartSctionHeader */
+.search_header {
+  background: url(img/header.png);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container-xxl {
+    height: 100%;
+    .row {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .col-md-6 {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .qyran {
+          background: $primery;
+          border-radius: 20px;
+          padding: 20px;
+          text-align: center;
+          color: $white;
+          width: 450px;
+          margin: 1rem 0;
+          h3 {
+            font-weight: normal;
+            padding-bottom: 0.5rem;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 2.3rem;
+          }
+        }
+        .btn {
+          text-decoration: none;
+          padding: 10px 30px;
+          background: $Dark;
+          border-radius: 20px;
+          margin: 0.5rem;
+          a {
+            text-decoration: none;
+            color: $white;
+            i {
+              padding: 0 0.5rem;
+            }
+          }
+        }
+      }
+      .col-md-6 {
+        .select-tab {
+          width: 400px;
+          background: $color-opcity;
+          opacity: 1;
+          border-radius: 10px;
+          margin: 1rem 0;
+          #Husband {
+            form {
+              padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+              .row-select {
+                display: flex;
+                select {
+                  &:nth-child(1) {
+                    margin-left: 0.5rem !important;
+                  }
+                }
+              }
+            }
+          }
+          #wife {
+            form {
+              padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+              .row-select {
+                display: flex;
+                select {
+                  &:nth-child(1) {
+                    margin-left: 0.5rem !important;
+                  }
+                }
+              }
+            }
+          }
+          .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem;
+            margin-bottom: 1rem;
+            .btn {
+              padding: 0;
+              padding: 7px 10px;
+              width: 100% !important;
+              &:nth-child(2) {
+                background: $primery;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* EndSctionHeader */

@@ -118,6 +118,9 @@ $color-opcity: #d0d1d2;
 /* StartHeader_2 */
 .header_2 {
   .container-xxl {
+    .hide {
+      display: none;
+    }
     display: flex;
     justify-content: space-between;
     background: $white;
@@ -152,7 +155,7 @@ $color-opcity: #d0d1d2;
             justify-content: center;
             align-items: center;
             color: $white;
-            font-size: 20px;
+            font-size: 25px;
           }
         }
       }
@@ -278,3 +281,45 @@ $color-opcity: #d0d1d2;
   }
 }
 /* EndSctionHeader */
+
+/* SectionAboutStart */
+
+.about {
+  position: relative;
+  margin-top: 2rem;
+  .container-xxl {
+    .row {
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        &::before {
+          content: "|";
+          margin: 0.5rem;
+          border-radius: 4px 0px 0px 4px;
+          width: 10px;
+          height: 2px;
+          background: $primery;
+          color: $primery;
+        }
+      }
+      .col-md-8 {
+        p {
+          margin-top: 1.5rem;
+          padding-right: 4rem;
+        }
+      }
+      .col-md-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-about {
+          width: 150px;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

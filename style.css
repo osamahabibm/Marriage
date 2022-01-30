@@ -13,6 +13,9 @@
   .header_1 .links_2 .call {
     display: none;
   }
+  .header_2 .container-xxl .hide {
+    display: inline !important;
+  }
   .header_2 .container-xxl .nav {
     position: fixed;
     top: 0;
@@ -62,9 +65,10 @@
     color: #eee;
   }
   .header_2 .container-xxl .nav .nav_list .nav_item .nav_link i {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-left: 0.5rem;
+    font-size: 1rem;
   }
   .header_2 .container-xxl .logo img {
     width: 70px !important;
@@ -104,6 +108,9 @@
 }
 
 @media only screen and (max-width: 540px) {
+  .header_1 {
+    display: none;
+  }
   .header_1 .container-xxl {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -146,6 +153,10 @@
   }
   .qyran p {
     font-size: 0.9rem !important;
+  }
+  /*sectionabout*/
+  .about p {
+    padding-right: 0.5rem !important;
   }
 }
 
@@ -395,6 +406,10 @@ select:focus {
           flex-direction: row-reverse;
 }
 
+.header_2 .container-xxl .hide {
+  display: none;
+}
+
 .header_2 .container-xxl .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,7 +475,7 @@ select:focus {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .header_2 .container-xxl .header_toggle {
@@ -617,4 +632,51 @@ select:focus {
 }
 
 /* EndSctionHeader */
+/* SectionAboutStart */
+.about {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.about .container-xxl .row h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.about .container-xxl .row h4::before {
+  content: "|";
+  margin: 0.5rem;
+  border-radius: 4px 0px 0px 4px;
+  width: 10px;
+  height: 2px;
+  background: #ff072a;
+  color: #ff072a;
+}
+
+.about .container-xxl .row .col-md-8 p {
+  margin-top: 1.5rem;
+  padding-right: 4rem;
+}
+
+.about .container-xxl .row .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .container-xxl .row .col-md-4 .img-about {
+  width: 150px;
+}
+
+.about .container-xxl .row .col-md-4 .img-about img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */

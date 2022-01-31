@@ -37,3 +37,14 @@ function openCity(evt, cityName) {
 var name = "0";
 
 document.getElementById(name).click();
+
+
+   $(".redmore-btn").on("click", function () {
+        $(this).parent().toggleClass("showContent");
+
+          var repleceText = $(this).parent().hasClass("showContent")
+        ? "إقرأ أقل ∧ "
+        : " ⌵ إقرأ المزيد";
+      $(this).text(repleceText);
+      });
+    

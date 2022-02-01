@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=El+Messiri:wght@400;500;600;700&family=Festive&display=swap");
 @media only screen and (max-width: 991px) {
   .nav_link {
     padding: 0.5rem 0 !important;
@@ -292,6 +293,7 @@ select:focus {
   outline: none;
   border: none;
   font-family: myFirstFont;
+  font-family: "Cairo", sans-serif;
   direction: rtl;
 }
 
@@ -482,12 +484,6 @@ select:focus {
   font-size: 25px;
 }
 
-.header_2 .container-xxl .nav_list .nav_item .nav_link i:hover {
-  outline: 4px solid #8b9a46;
-  -webkit-transition: 0.2s linear all;
-  transition: 0.2s linear all;
-}
-
 .header_2 .container-xxl .header_toggle {
   display: none;
   cursor: pointer;
@@ -555,6 +551,7 @@ select:focus {
 
 .search_header .container-xxl .row .col-md-6 .qyran h3 {
   font-weight: normal;
+  font-size: 1rem;
   padding-bottom: 0.5rem;
 }
 
@@ -656,9 +653,7 @@ select:focus {
 .about .container-xxl .row h4::before {
   content: "|";
   margin: 0.5rem;
-  border-radius: 4px 0px 0px 4px;
-  width: 10px;
-  height: 2px;
+  font-size: 1rem;
   background: #ff072a;
   color: #ff072a;
 }
@@ -667,6 +662,7 @@ select:focus {
   margin-top: 1.5rem;
   padding-right: 4rem;
   line-height: 1.8rem;
+  font-weight: 600;
 }
 
 .about .container-xxl .row .col-md-4 {
@@ -704,9 +700,7 @@ select:focus {
 .Blog .container-xxl h4::before {
   content: "|";
   margin: 0.5rem;
-  border-radius: 4px 0px 0px 4px;
-  width: 10px;
-  height: 2px;
+  font-size: 1rem;
   background: #ff072a;
   color: #ff072a;
 }
@@ -747,8 +741,8 @@ select:focus {
 }
 
 .Blog .container-xxl .row .rel h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   height: 24px;
   overflow: hidden;
   margin: 0.8rem 0;
@@ -758,6 +752,7 @@ select:focus {
   height: 72px;
   width: 100%;
   overflow: hidden;
+  font-weight: 600;
 }
 
 .Blog .container-xxl .row .rel .more {
@@ -781,6 +776,7 @@ select:focus {
   border-radius: 20px;
   margin: 0.5rem;
   color: #fff;
+  font-size: 0.8rem;
 }
 
 /* Start-Story*/
@@ -796,9 +792,7 @@ select:focus {
 .Story .container-xxl h4::before {
   content: "|";
   margin: 0.5rem;
-  border-radius: 4px 0px 0px 4px;
-  width: 10px;
-  height: 2px;
+  font-size: 1rem;
   background: #ff072a;
   color: #ff072a;
 }
@@ -836,8 +830,8 @@ select:focus {
 }
 
 .Story .container-xxl .row .rel h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   height: 24px;
   overflow: hidden;
   margin: 0.8rem 0;
@@ -849,6 +843,7 @@ select:focus {
   width: 100%;
   overflow: hidden;
   text-align: center;
+  font-weight: 600;
 }
 
 .Story .container-xxl .row .rel .name-city {
@@ -900,6 +895,7 @@ select:focus {
   border-radius: 20px;
   margin: 0.5rem;
   color: #fff;
+  font-size: 0.8rem;
 }
 
 .rel.showContent p {
@@ -912,6 +908,12 @@ select:focus {
 
 .rel.showContent a.redmore-btn {
   font-weight: 700;
+}
+
+.main-btn:hover {
+  outline: 2px solid #fff;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
 }
 
 .footer {
@@ -938,14 +940,14 @@ select:focus {
   content: "|";
   margin: 0.5rem;
   border-radius: 0;
-  width: 10px;
-  height: 2px;
+  font-size: 1rem;
   background: #ff072a;
   color: #ff072a;
 }
 
 .footer .container-xxl .row .about-group p {
   padding-right: 1rem;
+  line-height: 1.8rem;
 }
 
 .footer .container-xxl .row .links-footer {
@@ -962,8 +964,7 @@ select:focus {
   content: "|";
   margin: 0.5rem;
   border-radius: 0;
-  width: 10px;
-  height: 2px;
+  font-size: 1rem;
   background: #ff072a;
   color: #ff072a;
 }
@@ -973,6 +974,12 @@ select:focus {
   display: -ms-flexbox;
   display: flex;
   padding-right: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .container-xxl .row .links-footer .links ul li {
+  padding: 0.3rem;
 }
 
 .footer .container-xxl .row .links-footer .links ul li a {
@@ -994,8 +1001,7 @@ select:focus {
   content: "|";
   margin: 0.5rem;
   border-radius: 0;
-  width: 10px;
-  height: 2px;
+  font-size: 1rem;
   background: #ff072a;
   color: #ff072a;
 }
@@ -1052,6 +1058,5 @@ select:focus {
 
 .footer .Copyright .container-xxl h6 {
   text-align: center;
-  padding: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

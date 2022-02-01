@@ -43,7 +43,7 @@ document.getElementById(name).click();
         $(this).parent().toggleClass("showContent");
 
           var repleceText = $(this).parent().hasClass("showContent")
-        ? "إقرأ أقل ∧ "
+        ? "إقرأ أقل ^ "
         : " ⌵ إقرأ المزيد";
       $(this).text(repleceText);
       });

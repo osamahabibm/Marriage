@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=El+Messiri:wght@400;500;600;700&family=Festive&display=swap");
+
 @import "./scss/responsive";
 @import "scss/tab";
 * {
@@ -9,6 +11,7 @@
   outline: none;
   border: none;
   font-family: myFirstFont;
+  font-family: "Cairo", sans-serif;
   direction: rtl;
 }
 
@@ -156,10 +159,6 @@ $color-opcity: #d0d1d2;
             align-items: center;
             color: $white;
             font-size: 25px;
-            &:hover {
-              outline: 4px solid #8b9a46;
-              transition: 0.2s linear all;
-            }
           }
         }
       }
@@ -208,6 +207,7 @@ $color-opcity: #d0d1d2;
           margin: 1rem 0;
           h3 {
             font-weight: normal;
+            font-size: 1rem;
             padding-bottom: 0.5rem;
           }
           p {
@@ -299,9 +299,7 @@ $color-opcity: #d0d1d2;
         &::before {
           content: "|";
           margin: 0.5rem;
-          border-radius: 4px 0px 0px 4px;
-          width: 10px;
-          height: 2px;
+          font-size: 1rem;
           background: $primery;
           color: $primery;
         }
@@ -311,6 +309,7 @@ $color-opcity: #d0d1d2;
           margin-top: 1.5rem;
           padding-right: 4rem;
           line-height: 1.8rem;
+          font-weight: 600;
         }
       }
       .col-md-4 {
@@ -340,9 +339,7 @@ $color-opcity: #d0d1d2;
       &::before {
         content: "|";
         margin: 0.5rem;
-        border-radius: 4px 0px 0px 4px;
-        width: 10px;
-        height: 2px;
+        font-size: 1rem;
         background: $primery;
         color: $primery;
       }
@@ -369,8 +366,8 @@ $color-opcity: #d0d1d2;
           }
         }
         h3 {
-          font-size: 1.2rem;
-          font-weight: 600;
+          font-size: 1rem;
+          font-weight: 700;
           height: 24px;
           overflow: hidden;
           margin: 0.8rem 0;
@@ -379,6 +376,7 @@ $color-opcity: #d0d1d2;
           height: 72px;
           width: 100%;
           overflow: hidden;
+          font-weight: 600;
         }
         .more {
           text-align: center;
@@ -398,6 +396,7 @@ $color-opcity: #d0d1d2;
           border-radius: 20px;
           margin: 0.5rem;
           color: $white;
+          font-size: 0.8rem;
         }
       }
     }
@@ -415,9 +414,7 @@ $color-opcity: #d0d1d2;
       &::before {
         content: "|";
         margin: 0.5rem;
-        border-radius: 4px 0px 0px 4px;
-        width: 10px;
-        height: 2px;
+        font-size: 1rem;
         background: $primery;
         color: $primery;
       }
@@ -444,8 +441,8 @@ $color-opcity: #d0d1d2;
           }
         }
         h3 {
-          font-size: 1.2rem;
-          font-weight: 600;
+          font-size: 1rem;
+          font-weight: 700;
           height: 24px;
           overflow: hidden;
           margin: 0.8rem 0;
@@ -456,6 +453,7 @@ $color-opcity: #d0d1d2;
           width: 100%;
           overflow: hidden;
           text-align: center;
+          font-weight: 600;
         }
         .name-city {
           width: 100%;
@@ -497,6 +495,7 @@ $color-opcity: #d0d1d2;
           border-radius: 20px;
           margin: 0.5rem;
           color: $white;
+          font-size: 0.8rem;
         }
       }
     }
@@ -511,6 +510,11 @@ $color-opcity: #d0d1d2;
 
 .rel.showContent a.redmore-btn {
   font-weight: 700;
+}
+
+.main-btn:hover {
+  outline: 2px solid $white;
+  transition: 0.2s linear all;
 }
 
 .footer {
@@ -530,14 +534,14 @@ $color-opcity: #d0d1d2;
             content: "|";
             margin: 0.5rem;
             border-radius: 0;
-            width: 10px;
-            height: 2px;
+            font-size: 1rem;
             background: $primery;
             color: $primery;
           }
         }
         p {
           padding-right: 1rem;
+          line-height: 1.8rem;
         }
       }
       .links-footer {
@@ -550,8 +554,7 @@ $color-opcity: #d0d1d2;
             content: "|";
             margin: 0.5rem;
             border-radius: 0;
-            width: 10px;
-            height: 2px;
+            font-size: 1rem;
             background: $primery;
             color: $primery;
           }
@@ -559,8 +562,10 @@ $color-opcity: #d0d1d2;
         .links {
           display: flex;
           padding-right: 1rem;
+          flex-wrap: wrap;
           ul {
             li {
+              padding: 0.3rem;
               a {
                 text-decoration: none;
                 color: $white;
@@ -579,8 +584,7 @@ $color-opcity: #d0d1d2;
             content: "|";
             margin: 0.5rem;
             border-radius: 0;
-            width: 10px;
-            height: 2px;
+            font-size: 1rem;
             background: $primery;
             color: $primery;
           }
@@ -622,7 +626,6 @@ $color-opcity: #d0d1d2;
       color: $white;
       h6 {
         text-align: center;
-        padding: 0.5rem;
       }
     }
   }

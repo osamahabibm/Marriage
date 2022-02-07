@@ -1,3 +1,22 @@
+//pagination  
+$(function () {
+
+    /* initiate the plugin */
+    $("div.holder6").jPages({
+        containerID: "itemContainer6",
+        perPage: 9
+    });
+    $("div.holder7").jPages({
+        containerID: "itemContainer7",
+        perPage: 1
+
+    });
+
+
+
+});
+
+
 const navMenu = document.getElementById("nav_menu"),
 toggleMenu = document.getElementById("toggle-menu"),
 classMenu = document.getElementById("close-menu")
@@ -37,7 +56,8 @@ function openCity(evt, cityName) {
 var name = "0";
 
 document.getElementById(name).click();
-
+   
+    
 
    $(".redmore-btn").on("click", function () {
         $(this).parent().toggleClass("showContent");
@@ -47,4 +67,6 @@ document.getElementById(name).click();
         : " ⌵ إقرأ المزيد";
       $(this).text(repleceText);
       });
+    
+
     

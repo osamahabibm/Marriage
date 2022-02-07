@@ -1,0 +1,45 @@
+.title {
+  height: 184px !important;
+  .container-xxl {
+    display: flex;
+    align-items: center;
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      font-family: myFirstFont;
+      &::before {
+        content: "|";
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        background: #000;
+        color: #000;
+      }
+    }
+  }
+}
+
+.ask {
+  position: relative;
+  margin: 3rem 0;
+  .container-xxl {
+    .row {
+      .col-md-8 {
+        .aks_an {
+          margin-bottom: 2rem;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ff072a;
+            font-family: myFirstFont;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 500;
+            font-family: myFirstFont;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.contact {
+  margin-top: 2rem;
+  margin-bottom: 244px;
+  .container-xxl {
+    .row {
+      .form {
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          font-weight: 500;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          input {
+            border: 1px solid rgb(170, 154, 154);
+            margin-bottom: 0.5rem;
+            width: 600px;
+            border-radius: 0;
+            &::placeholder {
+              font-size: 1rem;
+              color: #2e3438;
+            }
+            &:focus {
+              box-shadow: none;
+              box-shadow: rgba(165, 149, 149, 0.2) 0px 8px 24px;
+              transition: 0.2s linear all;
+            }
+          }
+          textarea {
+            border: 1px solid rgb(170, 154, 154);
+            width: 600px;
+            height: 200px;
+            padding: 10px;
+            &:focus {
+              box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+              transition: 0.2s linear all;
+            }
+            &::placeholder {
+              font-size: 1rem;
+              color: #2e3438;
+            }
+          }
+          .btn {
+            background: #000;
+            color: #fff;
+            border-radius: 20px;
+            font-family: "Cairo", sans-serif !important;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      .contentUs {
+        display: flex;
+        justify-content: center;
+
+        .Us {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          background: #ff072a;
+          width: 350px;
+          height: 220px;
+          padding: 1rem 0;
+          border-radius: 20px;
+          h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            color: #fff;
+          }
+          h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            color: #fff;
+          }
+          a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 1rem;
+          }
+          .social {
+            padding-right: 1rem;
+            background: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0.2rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            a {
+              text-decoration: none;
+              i {
+                color: #fff;
+                padding-left: 0.5rem;
+                font-size: 1.5rem;
+              }
+              .fa-facebook-f {
+                color: #11468f;
+              }
+              .fa-twitter {
+                color: #1572a1;
+              }
+              .fa-instagram {
+                color: #ff072a;
+              }
+              .fa-whatsapp {
+                color: #34be82;
+              }
+              .fa-snapchat-ghost {
+                color: #a7b123;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

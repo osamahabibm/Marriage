@@ -5,6 +5,9 @@
 @import "scss/pages/about";
 @import "scss/pages/contact";
 @import "scss/pages/FeaturedMembers";
+@import "scss/pages/moreDetaileBlog";
+@import "scss/pages/advancedSearch";
+@import "scss/pages/Subscribe";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -227,7 +230,7 @@ $color-opcity: #d0d1d2;
           background: $Dark;
           border-radius: 20px;
           margin: 0.5rem;
-          font-family: "Cairo", sans-serif !important;
+          font-family: "Cairo", sans-serif;
           a {
             text-decoration: none;
             color: $white;
@@ -436,6 +439,9 @@ $color-opcity: #d0d1d2;
       gap: 1.5rem;
       .rel {
         width: 18rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .img_blog {
           border-radius: 50%;
           width: 250px;

@@ -8,7 +8,24 @@ $(function () {
     });
     $("div.holder7").jPages({
         containerID: "itemContainer7",
-        perPage: 1
+        perPage: 9
+
+    });
+  $("div.holder8").jPages({
+        containerID: "itemContainer8",
+        perPage: 9
+
+    });
+
+      $("div.holder9").jPages({
+        containerID: "itemContainer9",
+        perPage: 8
+
+    });
+
+        $("div.holder10").jPages({
+        containerID: "itemContainer10",
+        perPage: 8
 
     });
 

@@ -1,6 +1,9 @@
 .tab {
   overflow: hidden;
   margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab .container {
@@ -30,7 +33,7 @@
   transition: 0.3s;
   font-size: 15px;
   color: #fff;
-
+  font-family: "Cairo", sans-serif;
   opacity: 1;
 }
 .tab button:nth-child(1) {
@@ -59,7 +62,7 @@
   padding: 0.5rem 1rem !important;
   border-radius: 0% !important;
   border: 1px solid rgb(59, 46, 46) !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 select:focus {

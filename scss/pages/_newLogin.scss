@@ -1,0 +1,192 @@
+.newLogin {
+  margin: 3rem 0;
+  .container-xxl {
+    width: 900px;
+    box-shadow: #ff072a 0px 1px 12px -2px, #ff072a 0px 3px 7px -3px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    .header_title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background: #ff072a;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        font-family: "Cairo", sans-serif;
+      }
+      a {
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background: #ff072a;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        font-family: "Cairo", sans-serif;
+        width: 400px;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+    .block_1,
+    .block_2,
+    .block_3,
+    .block_4,
+    .block_5,
+    .block_6,
+    .block_7,
+    .block_8 {
+      .container {
+        .row {
+          h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+          }
+          .col-md-6 {
+            display: flex;
+            flex-direction: column;
+            input {
+              border: 1px solid rgb(75, 54, 54);
+              padding: 0.5rem 1rem;
+              color: #000;
+              margin-bottom: 1rem;
+
+              &::placeholder {
+                font-size: 1rem;
+                color: rgb(97, 73, 73);
+              }
+            }
+            .select {
+              border: 1px solid rgb(75, 54, 54) !important;
+              padding: 0.5rem 1rem;
+              color: rgb(97, 73, 73) !important;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .block_7,
+    .block_8 {
+      textarea {
+        border: 1px solid rgb(75, 54, 54);
+        padding: 0.5rem 1rem;
+        width: 100%;
+        height: 120px;
+        color: #000;
+        margin-bottom: 1rem;
+        &::placeholder {
+          font-size: 1rem;
+          color: rgb(97, 73, 73);
+        }
+      }
+    }
+    .block_8 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.form-controlLogin {
+  font-family: "Cairo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 1.3em auto;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+  margin: 1rem 0;
+  border: none;
+  width: 400px;
+  display: flex;
+  margin-bottom: 1rem;
+  a {
+    text-decoration: none;
+    color: #ff072a;
+    font-weight: 800;
+  }
+}
+
+.form-controlLogin + .form-controlLogin {
+  margin-top: 1em;
+}
+
+.newLogin input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: #000000;
+  /* Not removed via appearance */
+  margin: 0;
+  color: currentColor;
+  font-size: 20px;
+  width: 1em;
+  height: 1em;
+  display: grid;
+  place-content: center;
+}
+
+.newLogin input[type="checkbox"]::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #ffffff;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.newLogin input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 931px) {
+  .newLogin {
+    padding: 0 0.5rem;
+    .container-xxl {
+      width: 100% !important;
+      padding: 2rem 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .newLogin {
+    .container-xxl {
+      .header_title {
+        h3 {
+          font-size: 1rem !important;
+        }
+        a {
+          width: 300px !important;
+        }
+      }
+      .container {
+        .row {
+          h3 {
+            font-size: 0.9rem !important;
+          }
+          textarea {
+            &::placeholder {
+              font-size: 0.9rem !important;
+            }
+          }
+          .form-controlLogin {
+            font-size: 0.9rem;
+            flex-wrap: wrap !important;
+          }
+        }
+      }
+    }
+  }
+}

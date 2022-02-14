@@ -1,0 +1,76 @@
+.login {
+  height: 89vh !important;
+  padding: 3rem;
+  margin-bottom: 13rem !important;
+  .container-xxl {
+    height: auto !important;
+  }
+  .login_container {
+    .container-xxl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .select-tab {
+        width: 800px;
+        height: 400px;
+        background: #d0d1d2;
+        opacity: 1;
+        border-radius: 10px;
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+          font-size: 1.2rem;
+          background: #000000;
+          padding: 0.5rem 1rem;
+          color: #fff;
+          font-family: "Cairo", sans-serif;
+          margin-bottom: 1rem;
+        }
+        input {
+          padding: 0.5rem 1rem;
+          width: 300px;
+          border: 1px solid #000000;
+          margin-bottom: 1rem;
+          &::placeholder {
+            color: #000;
+          }
+        }
+        .forget-password-sinUp {
+          width: 300px;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            &:nth-child(1) {
+              color: #ff072a;
+            }
+            &:nth-child(2) {
+              color: #000000;
+            }
+          }
+        }
+        .btn-login {
+          width: 300px;
+          background: #ff072a;
+          padding: 0.5rem 1rem;
+          text-align: center;
+          border-radius: 20px;
+          a {
+            text-decoration: none;
+            color: #fff;
+            width: 100% !important;
+            display: block;
+            font-family: "Cairo", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

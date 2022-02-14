@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Subscribe</title>
+    <title>pay-bank</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="lib/normalize.css" />
     <link rel="stylesheet" href="lib/Bootstrap.css" />
@@ -102,30 +102,63 @@
     <!-- Section-header-Search -->
     <section class="search_header title">
       <div class="container-xxl">
-        <h4>الإشتراكات</h4>
+        <h4>الدفع البنكي</h4>
       </div>
     </section>
 
-    <!-- SectionSubscribeStart -->
-    <section class="Subscribe">
-      <div class="container-xxl">
+    <!-- Startservice -->
+    <section class="services">
+      <div class="container">
         <div class="row">
-          <div class="Subscribe-conttainer">
-            <div class="Subscribe_1">
-              <p>إشتراك مجاني</p>
-              <h3><span>0</span> ريال</h3>
-              <a href="table.html">عرض المميزات</a>
-            </div>
-            <div class="Subscribe_2">
-              <p>إشتراك مميز</p>
-              <h3><span>40</span> ريال</h3>
-              <a href="table.html">عرض المميزات</a>
-            </div>
+          <div class="col"></div>
+          <div class="col-md-12">
+            <form action="">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>اختر البنك</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input
+                type="text"
+                placeholder="اسم صاحب الحساب"
+                disabled
+                readonly
+              />
+              <input
+                type="number"
+                placeholder="رقم حساب البنك"
+                disabled
+                readonly
+              />
+              <input type="text" placeholder="الاي بان" disabled readonly />
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>المدينة</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+              <input
+                type="file"
+                name="file-2[]"
+                id="file-2"
+                class="inputfile inputfile-2"
+              />
+              <label for="file-2">
+                <span> برجاء ارفاق صورة الحوالة &hellip;</span></label
+              >
+
+              <div class="btn-from">
+                <a href="#">دفع</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- SectionSubscribeEnd -->
+    <!-- Endservice -->
 
     <!-- FooterStart -->
     <footer class="footer">
@@ -206,6 +239,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/Script.js"></script>
     <script src="lib/Booststrap.js"></script>
+    <script src="js/custom-file-input.js"></script>
     <script
       src="https://kit.fontawesome.com/4129e05598.js"
       crossorigin="anonymous"

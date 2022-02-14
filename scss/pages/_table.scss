@@ -1,0 +1,178 @@
+.table-section {
+  -webkit-animation: fadeEffect 2s;
+  animation: fadeEffect 2s;
+  margin-bottom: 13.5rem;
+}
+
+.table-section .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table-section .center table {
+  width: 900px;
+  margin: 2rem 0;
+}
+
+.table-section .center table thead {
+  background: #ff072a;
+  color: #fff;
+}
+
+.table-section .center table thead tr th {
+  text-align: center;
+  border: 1px solid #b19595;
+  border-left: 1px solid #ffffff;
+  padding: 15px;
+}
+
+.table-section .center table thead tr th:nth-child(1) {
+  text-align: right;
+}
+
+.table-section .center table tbody tr td {
+  text-align: center;
+  padding: 13px;
+  border: 1px solid #b19595;
+  font-weight: 700;
+}
+
+.table-section .center table tbody tr td:first-child {
+  text-align: right;
+  border-left: 1px solid #0a0707;
+}
+
+.table-section .center table tbody tr td a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 918px) {
+  .table-section .center table {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .table-section .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .table-section .center table {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .table-section .center table thead {
+    display: none;
+  }
+  .table-section .center table tbody {
+    width: 100% !important;
+    border-radius: 10px;
+  }
+  .table-section .center table tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #ffffff;
+    margin-bottom: 0.5rem;
+    width: 100% !important;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #ff072a;
+  }
+  .table-section .center table tbody tr td:first-child {
+    text-align: center;
+    border-left: none;
+  }
+  .table-section .center table tbody tr td {
+    text-align: center;
+    padding: 15px;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 1px solid rgb(131, 116, 116);
+    color: rgb(0, 0, 0);
+  }
+
+  .table-section .center table tbody tr td:last-child {
+    border-bottom: 0 !important;
+  }
+}
+
+.mark-green {
+  height: 30px;
+  width: 30px;
+  background: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
+.mark-red {
+  height: 30px;
+  width: 30px;
+  background: #ff072a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
+.last-center {
+  display: flex;
+  justify-content: center;
+}
+
+.table-section {
+  .btn {
+    color: #fff;
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-family: "Cairo", sans-serif;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      background: #000;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -141,9 +141,6 @@ address {
     line-height: inherit
 }
 
-ol, ul {
-    padding-left: 2rem
-}
 
 dl, ol, ul {
     margin-top: 0;

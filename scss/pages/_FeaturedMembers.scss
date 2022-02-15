@@ -1,6 +1,8 @@
 .FeaturedMembers {
   margin: 2rem 0 3rem 0;
   .container-xxl {
+    display: flex;
+    justify-content: center;
     .row {
       .select-memb {
         display: flex;

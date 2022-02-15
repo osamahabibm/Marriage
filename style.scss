@@ -15,6 +15,8 @@
 @import "scss/pages/account";
 @import "scss/pages/chat";
 @import "scss/pages/Favorite";
+@import "scss/pages/img";
+@import "scss/pages/wellcome";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -208,6 +210,7 @@ $color-opcity: #d0d1d2;
   background-repeat: no-repeat;
   .container-xxl {
     height: 100%;
+
     .row {
       height: 100%;
       display: flex;
@@ -375,6 +378,7 @@ $color-opcity: #d0d1d2;
       align-items: center;
       flex-wrap: wrap;
       gap: 1.5rem;
+      --bs-gutter-x: 0rem !important;
       .rel {
         width: 18rem;
         .img_blog {
@@ -449,7 +453,7 @@ $color-opcity: #d0d1d2;
       padding: 2rem 0;
       display: flex;
       justify-content: center;
-
+      --bs-gutter-x: 0rem !important;
       flex-wrap: wrap;
       gap: 1.5rem;
       .rel {

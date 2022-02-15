@@ -224,6 +224,14 @@
     }
   }
 
+  .search_header {
+    .container-xxl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   .nav_link {
     display: flex;
     flex-direction: row;
@@ -355,6 +363,14 @@
         font-size: 0.9rem !important;
       }
     }
+  }
+  .advancedSearch .container-xxl .row .col .select-tab #Husband form {
+    padding: 1.5rem 0rem 0.5rem 0rem !important;
+    width: 100%;
+  }
+  .advancedSearch .container-xxl .row .col .select-tab #wife form {
+    padding: 1.5rem 0rem 0.5rem 0rem !important;
+    width: 100%;
   }
 }
 

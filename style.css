@@ -27,7 +27,7 @@
   }
   .MembersMore .info-box-man .baic-info a {
     padding-left: 0.4rem !important;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: bolder;
   }
   .MembersMore .info-box-man .baic-info a i {
@@ -949,6 +949,10 @@ select:focus {
 /*MoreMembers*/
 .MembersMore {
   margin: 3rem 0 5rem 0;
+}
+
+.MembersMore .container-xxl .row {
+  --bs-gutter-x: 0rem !important;
 }
 
 .MembersMore .container-xxl .row .img-box {

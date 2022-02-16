@@ -139,6 +139,7 @@
   margin: 3rem 0 5rem 0;
   .container-xxl {
     .row {
+      --bs-gutter-x: 0rem !important;
       .img-box {
         display: -webkit-box;
         display: -ms-flexbox;
